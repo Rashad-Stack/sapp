@@ -1,0 +1,76 @@
+/* Variables */
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --primary-color: #4528dc;
+  --secondary-color: #8731e8;
+  --primary-gradient: linear-gradient(-47deg, #8731e8 0%, #4528dc 100%);
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-primary);
+}
+
+/* Global Styles */
+/* utility */
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+button {
+  background-color: none;
+}
+
+/* Header section */
+header {
+  background: var(--primary-gradient);
+  color: #fff;
+  padding: 1rem;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* header nav ul li a {
+  color: #fff;
+} */
+
+/* Mobile Devices max-width 576px */
+@media screen and (max-width: 576px) {
+  header nav ul {
+    display: none;
+  }
+}
